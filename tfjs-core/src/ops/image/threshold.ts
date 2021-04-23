@@ -132,7 +132,7 @@ function otsu(histogram: Tensor1D, total: number):Tensor1D {
         const meanFirstDivA = sum(mul(classFirst, range(0, classFirst.size)));
 
         meanFirst = div(meanFirstDivA, sum(classFirst) );
-
+	    
         const meanSecFill = fill(classSecond.shape, classFirst.size);
         const meanSecAdd = add(range(0,classSecond.size),meanSecFill);
         const meanSecMul = mul(classSecond, (meanSecAdd));
