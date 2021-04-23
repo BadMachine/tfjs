@@ -138,7 +138,6 @@ function otsu(histogram: Tensor1D, total: number):Tensor1D {
         const meanSecMul = mul(classSecond, (meanSecAdd));
         meanSec = div(sum(meanSecMul), sum(classSecond));
 
-
         const cInBetVarSubA = sub(meanFirst, meanSec);
         const cInBetVarSubB = sub(meanFirst, meanSec);
         const cInBetVarMul = mul(weightForeground, weightBack);
