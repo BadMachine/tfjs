@@ -57,7 +57,7 @@ function threshold_(
     image: Tensor3D | TensorLike,
     method = 'binary',
     inverted = false,
-    threshValue =  0.5
+    threshValue = 0.5
 ): Tensor3D {
     const $image = convertToTensor(image, 'image', 'threshold');
 
