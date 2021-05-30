@@ -58,7 +58,7 @@ import { convertToTensor } from '../../tensor_util_env';
  * @param image 3d tensor of shape [imageHeight,imageWidth, depth],
  * where imageHeight and imageWidth must be positive.The image color
  * range should be [0, 255].
- * @param method Optional string from `'binary' | 'otsu' | 'triangle'`
+ * @param method Optional string from `'binary' | 'otsu' | 'triangle' `
  * which specifies the method for thresholding. Defaults to 'binary'.
  * @param inverted Optional boolean whichspecifies
  * if colours should be inverted. Defaults to false.
